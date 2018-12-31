@@ -1,0 +1,31 @@
+/*-----------------------------helpers----------------------------*/
+@import "helpers/mixins";
+@import "helpers/variables";
+
+/*-----------------------------elements----------------------------*/
+@import 'elements/buttons';
+@import 'elements/forms';
+@import 'elements/texts';
+
+/*-----------------------------fonts----------------------------*/
+@import "fonts/fonts";
+
+/*-----------------------------layout----------------------------*/
+@import "layout/layout";
+
+/*-----------------------------pages----------------------------*/
+@import "pages/index";
+
+/*-----------------------------common----------------------------*/
+@import "common/footer";
+@import "common/header";
+
+/*-----------------------------sections----------------------------*/
+@import "sections/section1";
+@import "sections/section2";
+@import "sections/section3";
+@import "sections/section4";
+@import "sections/section5";
+@import "sections/section6";
+@import "sections/section7";
+

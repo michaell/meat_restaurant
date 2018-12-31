@@ -1,0 +1,144 @@
+*, *::after, *::before  {
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+}
+
+html {
+	background-color: white;
+
+	@include desctop {
+		font-size: 16px;
+	}
+	@include tablet-landscape {
+		font-size: 15px;
+	}
+	@include tablet-portrait {
+		font-size: 15px;
+	}
+	@include tablet-small {
+		font-size: 14px;
+	}
+	@include phone-landscape {
+		font-size: 13px;
+	}
+	@include phone-portrait {
+		font-size: 13px;
+	}
+}
+
+body {
+	width: 100%;
+	font-family: $default-font;
+	font-size: 16px;
+	line-height: 1.42;
+	-webkit-font-smoothing: antialiased; 
+}
+
+/*-----------------настройки контейнера------------------*/
+// Жёсткий контейнер
+
+.container {
+	margin: 0 auto;
+	display: flex;
+	flex-flow: column;
+	flex: 1;
+	justify-content: center;
+
+
+	
+	@include desctop-big {
+		width: 1300px;
+	}
+	// @include desctop {
+	// 	width: 970px;
+	// }
+	// @include tablet-landscape {
+	// 	width: 750px;
+	// }
+	// @include tablet-portrait {
+	// 	width: 600px;
+	// }
+	// @include tablet-small {
+	// 	width: 450px;
+	// }
+	// @include phone-landscape {
+	// 	width: 90%;
+	// }
+	// @include phone-portrait {
+	// 	width: 95%;
+	// }
+}
+
+// Резиновый контейнер
+// .container {
+// margin: 0 auto;
+	// display: flex;
+	// flex-flow: column;
+	// flex: 1;
+	// justify-content: center;
+			
+// 	@include desctop-big {
+// 		width: 1170px;
+// 	}
+// 	@include desctop {
+// 		width: 85%;
+// 	}
+// 	@include phone-landscape {
+// 		width: 90%;
+// 	}
+// 	@include phone-portrait {
+// 		width: 95%;
+// 	}
+// }
+
+.wrapper {
+	display: flex;
+	flex-flow: column;
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	font-weight: normal;
+	text-align: center;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a,
+a:focus,
+a:hover,
+a:active,
+a:visited, {
+	text-decoration: none;
+	outline: none;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+}
+
+.section {
+	display: flex;
+	flex-flow: column;
+	height: 100vh;
+	position: relative;
+}
